@@ -1,0 +1,22 @@
+.seekContainer {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.trackBar, .progressBar {
+  height: 1px;
+  border-radius: 4px;
+}
+
+.trackBar {
+  width: 100%;
+  background: #fff;
+}
+
+.progressBar {
+  background: #fe8c00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f83600, #fe8c00);
+}

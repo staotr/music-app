@@ -1,0 +1,49 @@
+header.appHeader {
+  background-color: #2f3640;
+  position: fixed;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+ul.headerFunctions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.headerFunctions li {
+  display: inline-block;
+}
+
+.searchContainer {
+  position: relative;
+}
+
+.searchContainer i {
+  position: absolute;
+  top: 5px;
+  right: 3px;
+}
+
+.searchInput {
+  background: #e5e5e5;
+  color: #666;
+  padding-right: 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+.searchInput:focus {
+  background: #fff;
+  outline: none;
+}
+
+@media (max-width: 400px) {
+  .searchContainer {
+    display: none;
+  }
+}

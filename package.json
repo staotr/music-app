@@ -1,0 +1,22 @@
+{
+  "name": "music-app",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "3.5",
+    "babel-preset-react": "^6.24.1",
+    "jquery": "^3.3.1",
+    "jqueryui": "^1.11.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.4.2",
+    "react-modal": "^3.5.1",
+    "react-native-volume-slider": "^0.5.1",
+    "react-player-controls": "^0.5.20",
+    "react-rangeslider": "^2.2.0",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
+  }
+}

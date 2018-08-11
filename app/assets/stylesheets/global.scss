@@ -1,0 +1,44 @@
+.flex {
+  display: flex;
+}
+
+.btnPrimary {
+  color: #fff;
+  border-radius: 4px;
+  background: #fe8c00;
+  background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+  background: linear-gradient(to right, #f83600, #fe8c00);
+  text-decoration: none;
+}
+
+.btnSecondary {
+  color: #969696;
+  border: 1px solid #585858;
+  border-radius: 4px;
+}
+
+.btnPrimary, .btnSecondary {
+  padding: 5px 10px;
+  margin: 0 10px;
+}
+
+.btnPrimary:hover {
+  color: #fff;
+}
+
+.btnSecondary:hover {
+  border: 1px solid #969696;
+  color: #969696;
+}
+
+.btnPrimary:hover, .btnSecondary:hover {
+  text-decoration: none;
+}
+
+.paddingTop75 {
+  padding-top: 75px;
+}
+
+.transition300 {
+  transition: all 300ms ease-in-out;
+}

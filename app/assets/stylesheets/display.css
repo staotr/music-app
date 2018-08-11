@@ -1,0 +1,18 @@
+.songDisplay {
+  width: 15%;
+  overflow: hidden;
+  white-space: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.songDisplay img {
+  height: 20px;
+  width: 20px;
+}
+
+.songDisplay span {
+    font-size: 0.8em;
+    color: #fff;
+}

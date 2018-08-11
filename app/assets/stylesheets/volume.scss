@@ -1,0 +1,27 @@
+.volumeContainer {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.bar, .level {
+  height: 1px;
+  width: 100%;
+}
+
+.bar, .slider {
+  background: #fff;
+}
+
+.level {
+  background: #fe8c00;
+  background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+  background: linear-gradient(to right, #f83600, #fe8c00); 
+}
+.slider {
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+  position: absolute;
+}
