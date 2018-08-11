@@ -1,9 +1,8 @@
 # README
+A Simple Music player application that allows mp3 upload from anonymous users
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Check it out here at https://music-app-merrimac.herokuapp.com/
 
-Things you may want to cover:
 
 * Ruby version
 
