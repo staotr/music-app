@@ -4,6 +4,7 @@ class Api::V1::TracksController < ApplicationController
     render json: @tracks
   end
 
+  # create sends any available track params to SAVETRACKJOB
   def create
     @input = create_input
     if check_if_track_valid(@input)
@@ -16,6 +17,7 @@ class Api::V1::TracksController < ApplicationController
 
   private
 
+  # extracts file path from files sent over params
   def extract_file_dir(input)
     new_input = { audio: input['track'].path, title: input['track'].original_filename }
     if !input['image'].nil?
@@ -24,6 +26,7 @@ class Api::V1::TracksController < ApplicationController
     return new_input
   end
 
+  # cleans params input by only extracting the necessary fields and files and creating a hash for them
   def create_input
     items_received = []
     params.each do |k|
@@ -41,6 +44,7 @@ class Api::V1::TracksController < ApplicationController
     return track
   end
 
+  # validates that a track field does exist otherwise it makes the create respond with 400
   def check_if_track_valid(track)
     !track["track"].nil? ? true : false
   end
