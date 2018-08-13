@@ -1,3 +1,8 @@
+/*
+Creates a track indicator that allows user to see what song is currently playing/pause
+in the bottom control bar
+*/
+
 import React from 'react'
 
 class Display extends React.Component {
@@ -10,6 +15,7 @@ class Display extends React.Component {
     }
   }
 
+  // creates image tag from current image state
   generateImageTag() {
     if (this.state.image != null) {
       return <img src={this.state.image}/>

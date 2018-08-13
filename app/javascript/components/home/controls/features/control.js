@@ -1,3 +1,7 @@
+/*
+Houses Music player controls with functions passed down from app.js
+*/
+
 import React from 'react'
 
 class Control extends React.Component {
