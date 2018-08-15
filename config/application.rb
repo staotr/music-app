@@ -13,6 +13,12 @@ module MusicApp
 
     config.assets.initialize_on_precompile = false
 
+    MIME::Types.add(
+      MIME::Type.new('audio/mp3').tap do |type|
+        type.add_extensions 'mp3'
+      end
+    )
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading

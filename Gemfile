@@ -17,8 +17,9 @@ gem 'bootstrap3-rails'
 gem 'uglifier', '>= 1.3.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker'
-# carrierwave facilitates file upload (needed for audio upload)
+# carrier wave with additional b64 decoding functionality
 gem 'carrierwave'
+gem 'carrierwave-base64'
 # fog allows for carrier to store file in the cloud (S3)
 gem 'fog-aws'
 # See https://github.com/rails/execjs#readme for more supported runtimes
