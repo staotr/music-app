@@ -8,7 +8,11 @@ class Tracks extends React.Component {
           <Col className='trackContainer' xs={6} md={3} key={track.id}>
             <div className='albumCoverContainer'>
               <div className='playButtonLink flex'>
-                <a onClick={() => { this.props.play(track.id) }}>
+                <a onClick={(e) => {
+                  this.props.play(track.id)
+                  this.props.trackEl(e)
+                  }}
+                >
                   <i className='fas fa-play'></i>
                 </a>
               </div>

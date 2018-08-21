@@ -57,7 +57,7 @@ class Upload extends React.Component {
 
 
   prepareForm(file, img = null) {
-      // init file reader for base64 conversion 
+      // init file reader for base64 conversion
       var track = {}
       const audioReader = new FileReader()
 
@@ -105,14 +105,11 @@ class Upload extends React.Component {
 
 
   render() {
-    return(
-      <form className='uploadForm flex'>
-        <i className="fas fa-cloud-upload-alt icon"></i>
-        <input className='uploadInput' type="file"
-               name="audio"
-               id="audio_upload"
-               accept="audio/*" onChange={this.organizeData}/>
-      </form>
+    return (
+      <div className="uploader">
+        <i className="fas fa-cloud"></i>
+        <input className="uploadInput" type="file" name="audio" id="audio_upload" accept="audio/*" onChange={this.organizeData}/>
+      </div>
     )
   }
 }

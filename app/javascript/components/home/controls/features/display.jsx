@@ -32,10 +32,10 @@ class Display extends React.Component {
     const songTitle = this.state.title
     const songImage = this.generateImageTag()
     return (
-      <div className='songDisplay flex'>
-        {songImage}
-        <span>{songTitle}</span>
-      </div>
+        <div className='songDisplay flex'>
+          {songImage}
+          <span>{songTitle}</span>
+        </div>
     )
   }
 }

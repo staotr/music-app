@@ -21,14 +21,14 @@ class Control extends React.Component {
   render() {
     const body = this.changeStyle()
     return (
-      <ul className='controlList'>
-        <li>
-          {body[0]}
-        </li>
-        <li>
-          {body[1]}
-        </li>
-      </ul>
+        <ul className='controlList'>
+          <li>
+            {body[0]}
+          </li>
+          <li>
+            {body[1]}
+          </li>
+        </ul>
     )
   }
 }

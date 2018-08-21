@@ -30,7 +30,11 @@ class Seeker extends React.Component {
 
   render() {
     return (
-      <div className='trackBar'><div style={{ width: `${this.state.percent}%` }} className='progressBar'></div></div>
+      <div className='seekContainer'>
+        <div className='trackBar'>
+          <div style={{ width: `${this.state.percent}%` }} className='progressBar'></div>
+        </div>
+      </div>
     )
   }
 }

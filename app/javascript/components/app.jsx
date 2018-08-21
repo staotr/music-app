@@ -11,7 +11,8 @@ class App extends React.Component {
       tracks: [],
       currentTrack: null,
       currentAudio: null,
-      isPlaying: null
+      isPlaying: null,
+      playElement: null
     }
 
     this.playTrack = this.playTrack.bind(this)
@@ -20,6 +21,7 @@ class App extends React.Component {
     this.getTrackData = this.getTrackData.bind(this)
     this.updateTrackList = this.updateTrackList.bind(this)
     this.updateVolume = this.updateVolume.bind(this)
+    this.trackElement = this.trackElement.bind(this)
   }
 
   componentDidMount() {
@@ -75,12 +77,33 @@ class App extends React.Component {
     this.getTrackData()
   }
 
+  trackElement(e) {
+    if (this.state.playElement == null) {
+      e.target.classList.toggle("fa-play")
+      e.target.classList.toggle("fa-pause")
+      this.setState({ playElement: e.target })
+    }
+
+    if (this.state.playElement != null) {
+      // get existing tag in state and toggle class
+      this.state.playElement.classList.toggle("fa-play")
+      this.state.playElement.classList.toggle("fa-pause")
+
+      // toggle class for new audio track to be played
+      e.target.classList.toggle("fa-play")
+      e.target.classList.toggle("fa-pause")
+
+      // set new audio play element as current element
+      this.setState({ playElement: e.target })
+    }
+
+  }
 
   render () {
     return (
       <div>
         <Header/>
-        <Main isPlaying={this.state.isPlaying} play={this.playTrack} tracks={this.state.tracks}/>
+        <Main trackEl={this.trackElement} play={this.playTrack} tracks={this.state.tracks}/>
         <ControlBar
           currentTrackIndex={this.state.currentTrack}
           audio={this.state.currentAudio}

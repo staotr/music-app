@@ -7,10 +7,21 @@
   bottom: 0;
   box-shadow: 0px -8px 30px -8px rgba(0,0,0,0.75);
 }
-
+.controlBar-list li {
+  display: inline-block;
+}
 /*
 Upload features section
 */
+
+.uploader {
+  position: absolute;
+  display: flex;
+  left: 10px;
+  color: #fff;
+  height: 100%;
+  align-items: center;
+}
 
 .uploadForm {
   align-items: center;
@@ -26,13 +37,9 @@ Upload features section
 
 .uploadInput {
   position: absolute;
-  top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
+  width: 10px;
   opacity: 0;
-  cursor: pointer;
-  width: 25px;
 }
 
 

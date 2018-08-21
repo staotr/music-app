@@ -11,7 +11,7 @@ class Main extends React.Component {
   }
 
   compWithProps() {
-    return <Home play={this.props.play} tracks={this.props.tracks} />
+    return <Home trackEl={this.props.trackEl} play={this.props.play} tracks={this.props.tracks} />
   }
 
   render() {
